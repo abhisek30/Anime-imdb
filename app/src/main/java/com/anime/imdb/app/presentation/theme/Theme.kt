@@ -1,4 +1,4 @@
-package com.anime.imdb.app.ui.theme
+package com.anime.imdb.app.presentation.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
