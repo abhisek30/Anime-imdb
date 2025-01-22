@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.demo.example.myapplication"
+    namespace = "com.anime.imdb.app"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.demo.example.myapplication"
+        applicationId = "com.anime.imdb.app"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
