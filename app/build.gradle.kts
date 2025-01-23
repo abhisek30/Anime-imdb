@@ -79,5 +79,6 @@ dependencies {
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.coil)
+    implementation(libs.androidyoutubeplayer)
 
 }

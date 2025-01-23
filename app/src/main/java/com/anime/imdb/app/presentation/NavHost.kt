@@ -5,6 +5,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
+import com.anime.imdb.app.presentation.animeDetails.AnimeDetailsContent
 import com.anime.imdb.app.presentation.animeList.AnimeListContent
 import kotlinx.serialization.Serializable
 
@@ -25,7 +26,8 @@ fun NavHost(modifier: Modifier = Modifier) {
         }
 
         composable<AnimeScreen.AnimeDetailsScreen> { backstackEntry ->
-            val id = backstackEntry.toRoute<AnimeScreen.AnimeDetailsScreen>()
+            val animeDetailsScreen = backstackEntry.toRoute<AnimeScreen.AnimeDetailsScreen>()
+            AnimeDetailsContent(id = animeDetailsScreen.id)
         }
 
     }
