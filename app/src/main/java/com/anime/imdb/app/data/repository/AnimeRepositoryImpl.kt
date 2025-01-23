@@ -11,9 +11,9 @@ class AnimeRepositoryImpl @Inject constructor(
     private val apiService : AnimeService
 ) : IAnimeRepository {
 
-    override suspend fun getAnimeList(): Result<AnimeList> {
+    override suspend fun getAnimeList(page: Int?): Result<AnimeList> {
         return try {
-            val result = apiService.getAnimeList()
+            val result = apiService.getAnimeList(page)
             if(result.isSuccessful) {
                 result.body()?.toModel()?.let {
                     Result.success(it)
