@@ -7,6 +7,10 @@ data class AnimeListDto(
     @SerializedName("data") val data: ArrayList<DataDto>? = arrayListOf(),
 )
 
+data class AnimeDetailDto(
+    @SerializedName("data") val data: DataDto? = null,
+)
+
 data class PaginationDto(
     @SerializedName("last_visible_page") val lastVisiblePage: Int? = null,
     @SerializedName("has_next_page") val hasNextPage: Boolean? = null,

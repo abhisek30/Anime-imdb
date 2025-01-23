@@ -10,6 +10,8 @@ object AnimeMapper {
         data = data?.map { it.toModel() }?.toCollection(ArrayList()) ?: arrayListOf()
     )
 
+    fun AnimeDetailDto.toModel() = data?.toModel()
+
     fun PaginationDto.toModel() = Pagination(
         lastVisiblePage = lastVisiblePage ?: 0,
         hasNextPage = hasNextPage ?: false,
